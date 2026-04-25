@@ -9,6 +9,9 @@ jobs:
   ejecutar-python:
     runs-on: ubuntu-latest
 
+    env:
+      APP_ENV: desarrollo
+    
     steps:
       - name: Descargar el código del repositorio
         uses: actions/checkout@v4
