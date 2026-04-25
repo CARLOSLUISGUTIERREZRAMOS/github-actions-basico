@@ -2,7 +2,7 @@ name: Ejecutar script en Python
 
 on:
   push:
-
+  workflow_dispatch:
 jobs:
   ejecutar-python:
     runs-on: ubuntu-latest
