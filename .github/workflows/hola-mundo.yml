@@ -2,6 +2,8 @@ name: Ejecutar script en Python
 
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   ejecutar-python:
