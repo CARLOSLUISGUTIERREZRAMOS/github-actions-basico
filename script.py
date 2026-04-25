@@ -1,9 +1,12 @@
 import os
 
 entorno = os.getenv("APP_ENV")
+api_key = os.getenv("API_KEY")
 
 print("✅ Script ejecutado correctamente")
-print(f"🌍 Entorno actual: {entorno}")
+print(f"🌍 Entorno: {entorno}")
 
-for i in range(1, 4):
-    print(f"Contando: {i}")
+if api_key:
+    print("🔐 API_KEY recibida correctamente")
+else:
+    print("❌ API_KEY no encontrada")
