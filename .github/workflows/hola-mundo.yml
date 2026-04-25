@@ -11,7 +11,7 @@ jobs:
 
     env:
       APP_ENV: desarrollo
-    
+      API_KEY: ${{ secrets.API_KEY }}
     steps:
       - name: Descargar el código del repositorio
         uses: actions/checkout@v4
