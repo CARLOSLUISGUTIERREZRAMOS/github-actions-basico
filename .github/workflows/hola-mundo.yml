@@ -17,4 +17,4 @@ jobs:
           python-version: '3.11'
 
       - name: Ejecutar script
-        run: python script.py
+        run: python arhivo-que-no-existe.py
