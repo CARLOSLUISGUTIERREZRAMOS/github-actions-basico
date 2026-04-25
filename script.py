@@ -1,4 +1,9 @@
-print("✅ Hola desde Python ejecutado por GitHub Actions")
+import os
 
-for i in range(1, 6):
+entorno = os.getenv("APP_ENV")
+
+print("✅ Script ejecutado correctamente")
+print(f"🌍 Entorno actual: {entorno}")
+
+for i in range(1, 4):
     print(f"Contando: {i}")
