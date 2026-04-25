@@ -5,6 +5,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      mensaje:
+        description: 'Mensaje que quiero mostrar'
+        required: true
+        default: 'Hola desde input'
 jobs:
   ejecutar-python:
     runs-on: ubuntu-latest
