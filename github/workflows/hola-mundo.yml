@@ -1,0 +1,12 @@
+name: Hola Mundo Action
+
+on:
+  push:
+
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar mensaje
+        run: echo "¡Hola! GitHub Actions está funcionando 🚀"
