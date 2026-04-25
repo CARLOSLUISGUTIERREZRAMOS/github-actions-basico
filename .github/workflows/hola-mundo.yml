@@ -1,12 +1,20 @@
-name: Hola Mundo Action
+name: Ejecutar script en Python
 
 on:
   push:
 
 jobs:
-  saludar:
+  ejecutar-python:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Mostrar mensaje
-        run: echo "¡Hola! GitHub Actions está funcionando 🚀"
+      - name: Descargar el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Ejecutar script
+        run: python script.py
